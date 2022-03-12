@@ -39,6 +39,7 @@ function playRound(playerSelection,computerSelection){
     if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("It's a draw!");
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'rock' && computerSelection.toLowerCase() === 'paper') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("Paper beats Rock, You Lose!");
@@ -80,3 +81,15 @@ function game() {
     }
 }
 game();
+
+// Function to Declare Winner
+function winner() {
+    if(playerScore === compScore) {
+        console.log("It was a Close Game!!");
+    } else if (playerScore > compScore) {
+        console.log("You won this Game!!");
+    } else {
+        console.log("You Lost this Game!!");
+    }
+}
+winner();
