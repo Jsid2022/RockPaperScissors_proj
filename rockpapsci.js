@@ -14,7 +14,7 @@ function playerPlay(){
         playerChoice = "Scissors";
     } else if (playerChoice.toLowerCase() !== "rock" || "paper" || "scissors" || parseInt(playerChoice) !== 1 || 2 || 3) {
         // If value is not either rock,paper,scissors or 1,2,3 give a error message
-        alert("Please Try Again!!");
+        alert("Please Select from (1)Rock (2)Paper (3)Scissors");
         playerSelection();
     } else {
         console.log("Don't Want to Play?");
