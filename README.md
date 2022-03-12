@@ -5,7 +5,8 @@ About Project: There are two players in this Game(one is Computer which will sel
 Rules of the Game:
 1. Rock beats Scissors
 2. Paper beats Rock
-3. Scissors beat Paper\n
+3. Scissors beat Paper
+
 Result of the Game: After the fifth Round Your's and Computer score will be computed, If your Score is greater than Computer's Then you win the game otherwise Computer win the game. If your's and computer's scores are equal then it was a close game(draw).
 
 I want help in this project, I m facing a problem if its a draw between computerChoice and playerChoice then prompt should ask for playerChoice again.
