@@ -1,7 +1,9 @@
 # RockPaperScissors_proj
 Hello Everyone!
 This is my first JavaScript Project(Rock, Paper or Scissors)
+
 About Project: There are two players in this Game(one is Computer which will select random String value from "Rock", "Paper" or "Scissors", and Second one is you). When you will run this project a prompt will pop up on your screen asking to input a value from rock, paper or scissors. There are Total five rounds in this game.
+
 Rules of the Game:
 1. Rock beats Scissors
 2. Paper beats Rock
