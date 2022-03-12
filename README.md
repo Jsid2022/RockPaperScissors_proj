@@ -11,6 +11,6 @@ Rules of the Game:
 
 Result of the Game: After the fifth Round Your's and Computer score will be computed, If your Score is greater than Computer's Then you win the game otherwise Computer win the game. If your's and computer's scores are equal then it was a close game(draw).
 
-I want help in this project, I m facing a problem if its a draw between computerChoice and playerChoice then prompt should ask for playerChoice again.
+I want help in this project, I m facing a problem if its a draw between computerChoice and playerChoice then prompt should ask for playerChoice again for that particular round and then that round should be counted.
 or You have a better Solution for this game then please feel free to give suggestions. Your Help will mean a lot to me.
 Thank you.
