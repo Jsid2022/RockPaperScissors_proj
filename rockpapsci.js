@@ -5,7 +5,6 @@ function computerPlay(){
 }
 // Function to store Player/User Choice
 function playerPlay(){
-    console.log("Do You Choose (1)Rock (2)Paper (3)Scissors");
     let playerChoice = prompt("Do You Choose (1)Rock (2)Paper (3)Scissors");
     if(playerChoice.toLowerCase() === "rock" || parseInt(playerChoice) === 1) {
         playerChoice = "Rock";
@@ -27,7 +26,7 @@ function playerPlay(){
 let computerSelection = computerPlay();
 
 // Variable to Store Player/user choice
-let playerSelection = playerPlay();
+let playerSelection = playerPlay;
 
 // Variable to store Computer Score
 let compScore = 0;
@@ -44,30 +43,40 @@ function playRound(playerSelection,computerSelection){
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("Paper beats Rock, You Lose!");
         compScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'paper' && computerSelection.toLowerCase() === 'rock') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("Paper beats Rock, You Won!");
         playerScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'rock' && computerSelection.toLowerCase() === 'scissors') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
-        console.log("scissors beats Rock, You Lose!");
-        compScore++;
+        console.log("Rock beats Scissors, You Won!");
+        playerScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection.toLowerCase() === 'rock') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
-        console.log("Scissors beats Rock, You Won!");
-        playerScore++;
+        console.log("Rock beats Scissors, You lose!");
+        compScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection.toLowerCase() === 'paper') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("Scissors beats Paper, You Won!");
         playerScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else if (playerSelection.toLowerCase() === 'paper' && computerSelection.toLowerCase() === 'scissors') {
         console.log("Your Choice: "+ playerSelection + ", " + "Computer: " + computerSelection);
         console.log("Scissors beats Paper, You Lose!");
         compScore++;
+        console.log("Your Score: " + playerScore +", " +"Computer Score: " + compScore);
     } else {
         console.log("Game is not Working, Sorry for the Inconvenience.");
     }
 }
-playRound(playerSelection,computerSelection);
-console.log("Your Score: " + playerScore + ", " + "Computer Score: " + compScore);
 // Function to Create Best of 5 Rounds for this game
+function game() {
+    for(let i = 0; i < 5; i++) {
+        playRound(playerPlay(),computerPlay());
+    }
+}
+game();
