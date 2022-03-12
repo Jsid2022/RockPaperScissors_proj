@@ -1,1 +1,5 @@
-console.log('Hello World')
+// Randomly return either 'Rock', 'Paper' or 'Scissors'.
+
+function computerPlay() {
+    
+}
